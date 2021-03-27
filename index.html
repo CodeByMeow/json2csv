@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Convert</title>
+</head>
+<body>
+    <section class="main">
+        <div class="input-data">
+            <div class="input-data__form">
+                <textarea class="input-text" id="inp" cols="30" rows="10"></textarea>
+            </div>
+            
+            <div class="action-bar">
+                <label for="upload-file" class="btn">Upload</label>
+                <input type="file" name="upload" id="upload-file" multiple>
+            </div>
+        </div>
+        <div class="action-button">
+            <button id="to-json">To JSON</button>
+            <button id="to-csv">To CSV</button>
+        </div>
+        <div class="out-data">
+            <div class="out-data__view">
+            <textarea class="output-text" id="out" cols="30" rows="10" readonly></textarea>
+            </div>
+            <div class="action-bar">
+                <button id="save-btn">Save</button>
+                <button id="clear-btn">Clear</button>
+                <button id ="copy-btn">Copy</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
